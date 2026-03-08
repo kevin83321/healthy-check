@@ -1,0 +1,258 @@
+/* ===== 全域設定 ===== */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family: "Noto Sans TC", Arial, sans-serif;
+
+    background:#f4f6fb;
+
+    margin:0;
+
+    padding:40px 20px;
+
+    color:#333;
+
+}
+
+
+/* ===== 主容器 ===== */
+
+.container{
+
+    max-width:680px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:14px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+/* ===== 標題 ===== */
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:28px;
+
+    color:#2c3e50;
+
+}
+
+h2{
+
+    margin-bottom:20px;
+
+    color:#34495e;
+
+}
+
+
+/* ===== Step 顯示控制 ===== */
+
+.step{
+
+    display:none;
+
+}
+
+.step.active{
+
+    display:block;
+
+}
+
+
+/* ===== 表單 ===== */
+
+input[type=text],
+input[type=email],
+input[type=number]{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:6px;
+
+    margin-bottom:16px;
+
+    border:1px solid #d6d6d6;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+}
+
+
+/* focus 效果 */
+
+input:focus{
+
+    outline:none;
+
+    border-color:#4c7cff;
+
+}
+
+
+/* ===== checkbox ===== */
+
+label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+}
+
+input[type=checkbox]{
+
+    margin-right:6px;
+
+}
+
+
+/* ===== 按鈕 ===== */
+
+button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#4c7cff;
+
+    color:white;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+button:hover{
+
+    background:#355fe6;
+
+}
+
+
+/* 返回按鈕 */
+
+button.secondary{
+
+    background:#9aa4b2;
+
+}
+
+button.secondary:hover{
+
+    background:#7d8794;
+
+}
+
+
+/* 按鈕排列 */
+
+.nav-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:20px;
+
+}
+
+
+/* ===== 結果頁 ===== */
+
+.result-card{
+
+    background:#f0f4ff;
+
+    padding:16px;
+
+    border-radius:8px;
+
+    margin-bottom:14px;
+
+    border-left:5px solid #4c7cff;
+
+}
+
+
+/* 結果數值 */
+
+.score{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#4c7cff;
+
+}
+
+
+/* ===== 健康分析區 ===== */
+
+#result{
+
+    margin-top:20px;
+
+}
+
+
+/* ===== 手機版 ===== */
+
+@media (max-width:600px){
+
+.container{
+
+    padding:25px;
+
+}
+
+h1{
+
+    font-size:24px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.nav-buttons{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+}
